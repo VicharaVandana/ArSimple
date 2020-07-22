@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+<MICROSAR>
+   <Dcm>
+      <DcmConfigSet name="DcmConfigSet">
+         <DcmDsd name="DcmDsd">
+            <DcmDsdServiceTable name="DcmDsdServiceTable">
+               <DcmDsdService name="WriteDataByIdentifier">
+                  <DcmDsdSidTabServiceId contains="VALUE" type="INTEGER">46</DcmDsdSidTabServiceId>
+                  <DcmDsdSidTabSubfuncAvail contains="VALUE" type="BOOLEAN">false</DcmDsdSidTabSubfuncAvail>
+                  <DcmDsdSidTabSessionLevelRef contains="REFERENCE" type="REFERENCE">/MICROSAR/Dcm/DcmConfigSet/DcmDsp/DcmDspSession/extendedDiagnosticSession</DcmDsdSidTabSessionLevelRef>
+                  <DcmDsdSidTabSessionLevelRef contains="REFERENCE" type="REFERENCE">/MICROSAR/Dcm/DcmConfigSet/DcmDsp/DcmDspSession/safetySystemDiagnosticSession</DcmDsdSidTabSessionLevelRef>
+               </DcmDsdService>
+               <DcmDsdService name="ReadDataByIdentifier">
+                  <DcmDsdSidTabServiceId contains="VALUE" type="INTEGER">34</DcmDsdSidTabServiceId>
+                  <DcmDsdSidTabSubfuncAvail contains="VALUE" type="BOOLEAN">false</DcmDsdSidTabSubfuncAvail>
+                  <DcmDsdSidTabSessionLevelRef contains="REFERENCE" type="REFERENCE">/MICROSAR/Dcm/DcmConfigSet/DcmDsp/DcmDspSession/extendedDiagnosticSession</DcmDsdSidTabSessionLevelRef>
+                  <DcmDsdSidTabSessionLevelRef contains="REFERENCE" type="REFERENCE">/MICROSAR/Dcm/DcmConfigSet/DcmDsp/DcmDspSession/defaultSession</DcmDsdSidTabSessionLevelRef>
+               </DcmDsdService>
+               <DcmDsdService name="DiagnosticSessionControl">
+                  <DcmDsdSubService name="defaultSession">
+                     <DcmDsdSubServiceId contains="VALUE" type="INTEGER">1</DcmDsdSubServiceId>
+                     <DcmDsdSubServiceSessionLevelRef contains="REFERENCE" type="REFERENCE">/MICROSAR/Dcm/DcmConfigSet/DcmDsp/DcmDspSession/defaultSession</DcmDsdSubServiceSessionLevelRef>
+                     <DcmDsdSubServiceSessionLevelRef contains="REFERENCE" type="REFERENCE">/MICROSAR/Dcm/DcmConfigSet/DcmDsp/DcmDspSession/extendedDiagnosticSession</DcmDsdSubServiceSessionLevelRef>
+                     <DcmDsdSubServiceSessionLevelRef contains="REFERENCE" type="REFERENCE">/MICROSAR/Dcm/DcmConfigSet/DcmDsp/DcmDspSession/programmingSession</DcmDsdSubServiceSessionLevelRef>
+                     <DcmDsdSubServiceSessionLevelRef contains="REFERENCE" type="REFERENCE">/MICROSAR/Dcm/DcmConfigSet/DcmDsp/DcmDspSession/safetySystemDiagnosticSession</DcmDsdSubServiceSessionLevelRef>
+                  </DcmDsdSubService>
+                  <DcmDsdSubService name="safetySystemDiagnosticSession">
+                     <DcmDsdSubServiceId contains="VALUE" type="INTEGER">4</DcmDsdSubServiceId>
+                     <DcmDsdSubServiceSessionLevelRef contains="REFERENCE" type="REFERENCE">/MICROSAR/Dcm/DcmConfigSet/DcmDsp/DcmDspSession/defaultSession</DcmDsdSubServiceSessionLevelRef>
+                     <DcmDsdSubServiceSessionLevelRef contains="REFERENCE" type="REFERENCE">/MICROSAR/Dcm/DcmConfigSet/DcmDsp/DcmDspSession/safetySystemDiagnosticSession</DcmDsdSubServiceSessionLevelRef>
+                     <DcmDsdSubServiceSessionLevelRef contains="REFERENCE" type="REFERENCE">/MICROSAR/Dcm/DcmConfigSet/DcmDsp/DcmDspSession/extendedDiagnosticSession</DcmDsdSubServiceSessionLevelRef>
+                  </DcmDsdSubService>
+                  <DcmDsdSubService name="programmingSession">
+                     <DcmDsdSubServiceId contains="VALUE" type="INTEGER">2</DcmDsdSubServiceId>
+                     <DcmDsdSubServiceSessionLevelRef contains="REFERENCE" type="REFERENCE">/MICROSAR/Dcm/DcmConfigSet/DcmDsp/DcmDspSession/defaultSession</DcmDsdSubServiceSessionLevelRef>
+                     <DcmDsdSubServiceSessionLevelRef contains="REFERENCE" type="REFERENCE">/MICROSAR/Dcm/DcmConfigSet/DcmDsp/DcmDspSession/programmingSession</DcmDsdSubServiceSessionLevelRef>
+                     <DcmDsdSubServiceSessionLevelRef contains="REFERENCE" type="REFERENCE">/MICROSAR/Dcm/DcmConfigSet/DcmDsp/DcmDspSession/extendedDiagnosticSession</DcmDsdSubServiceSessionLevelRef>
+                  </DcmDsdSubService>
+                  <DcmDsdSubService name="extendedDiagnosticSession">
+                     <DcmDsdSubServiceId contains="VALUE" type="INTEGER">3</DcmDsdSubServiceId>
+                     <DcmDsdSubServiceSessionLevelRef contains="REFERENCE" type="REFERENCE">/MICROSAR/Dcm/DcmConfigSet/DcmDsp/DcmDspSession/defaultSession</DcmDsdSubServiceSessionLevelRef>
+                     <DcmDsdSubServiceSessionLevelRef contains="REFERENCE" type="REFERENCE">/MICROSAR/Dcm/DcmConfigSet/DcmDsp/DcmDspSession/extendedDiagnosticSession</DcmDsdSubServiceSessionLevelRef>
+                     <DcmDsdSubServiceSessionLevelRef contains="REFERENCE" type="REFERENCE">/MICROSAR/Dcm/DcmConfigSet/DcmDsp/DcmDspSession/safetySystemDiagnosticSession</DcmDsdSubServiceSessionLevelRef>
+                  </DcmDsdSubService>
+                  <DcmDsdSidTabServiceId contains="VALUE" type="INTEGER">16</DcmDsdSidTabServiceId>
+                  <DcmDsdSidTabSubfuncAvail contains="VALUE" type="BOOLEAN">true</DcmDsdSidTabSubfuncAvail>
+                  <DcmDsdSidTabSessionLevelRef contains="REFERENCE" type="REFERENCE">/MICROSAR/Dcm/DcmConfigSet/DcmDsp/DcmDspSession/defaultSession</DcmDsdSidTabSessionLevelRef>
+                  <DcmDsdSidTabSessionLevelRef contains="REFERENCE" type="REFERENCE">/MICROSAR/Dcm/DcmConfigSet/DcmDsp/DcmDspSession/extendedDiagnosticSession</DcmDsdSidTabSessionLevelRef>
+                  <DcmDsdSidTabSessionLevelRef contains="REFERENCE" type="REFERENCE">/MICROSAR/Dcm/DcmConfigSet/DcmDsp/DcmDspSession/safetySystemDiagnosticSession</DcmDsdSidTabSessionLevelRef>
+               </DcmDsdService>
+            </DcmDsdServiceTable>
+         </DcmDsd>
+         <DcmDsp name="DcmDsp">
+            <DcmDspSession name="DcmDspSession">
+               <DcmDspSessionRow name="defaultSession">
+                  <DcmDspSessionLevel contains="VALUE" type="INTEGER">1</DcmDspSessionLevel>
+                  <DcmDspSessionP2ServerMax contains="VALUE" type="FLOAT">0.05</DcmDspSessionP2ServerMax>
+                  <DcmDspSessionP2StarServerMax contains="VALUE" type="FLOAT">5</DcmDspSessionP2StarServerMax>
+                  <DcmDspSessionForBoot contains="VALUE" type="ENUMERATION">DCM_NO_BOOT</DcmDspSessionForBoot>
+               </DcmDspSessionRow>
+               <DcmDspSessionRow name="programmingSession">
+                  <DcmDspSessionLevel contains="VALUE" type="INTEGER">2</DcmDspSessionLevel>
+                  <DcmDspSessionP2ServerMax contains="VALUE" type="FLOAT">0.05</DcmDspSessionP2ServerMax>
+                  <DcmDspSessionP2StarServerMax contains="VALUE" type="FLOAT">5</DcmDspSessionP2StarServerMax>
+                  <DcmDspSessionForBoot contains="VALUE" type="ENUMERATION">DCM_SYS_BOOT</DcmDspSessionForBoot>
+               </DcmDspSessionRow>
+               <DcmDspSessionRow name="safetySystemDiagnosticSession">
+                  <DcmDspSessionLevel contains="VALUE" type="INTEGER">4</DcmDspSessionLevel>
+                  <DcmDspSessionP2ServerMax contains="VALUE" type="FLOAT">0.05</DcmDspSessionP2ServerMax>
+                  <DcmDspSessionP2StarServerMax contains="VALUE" type="FLOAT">5</DcmDspSessionP2StarServerMax>
+                  <DcmDspSessionForBoot contains="VALUE" type="ENUMERATION">DCM_NO_BOOT</DcmDspSessionForBoot>
+               </DcmDspSessionRow>
+               <DcmDspSessionRow name="extendedDiagnosticSession">
+                  <DcmDspSessionLevel contains="VALUE" type="INTEGER">3</DcmDspSessionLevel>
+                  <DcmDspSessionP2ServerMax contains="VALUE" type="FLOAT">0.05</DcmDspSessionP2ServerMax>
+                  <DcmDspSessionP2StarServerMax contains="VALUE" type="FLOAT">5</DcmDspSessionP2StarServerMax>
+                  <DcmDspSessionForBoot contains="VALUE" type="ENUMERATION">DCM_NO_BOOT</DcmDspSessionForBoot>
+               </DcmDspSessionRow>
+            </DcmDspSession>
+            <DcmDspMaxDidToRead contains="VALUE" type="INTEGER">1</DcmDspMaxDidToRead>
+         </DcmDsp>
+         <DcmPageBufferCfg name="DcmPageBufferCfg">
+            <DcmPagedBufferEnabled contains="VALUE" type="BOOLEAN">false</DcmPagedBufferEnabled>
+         </DcmPageBufferCfg>
+      </DcmConfigSet>
+   </Dcm>
+</MICROSAR>
